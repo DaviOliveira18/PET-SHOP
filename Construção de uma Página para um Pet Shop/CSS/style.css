@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nomeDoSite {
+  background-image: url("../IMAGEM/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nomeDoSite {
+  background-color: black;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: solid; /* Remove this property to avoid unexpected underline */
+  padding: 20px;
+  color: blue;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 15px;
+  transition: 0.7s;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+header nav ul li:hover {
+  background-color: #ADD8E6;
+  text-decoration: underline; /* Underline appears on hover */
+}
+
+main {
+  /* No changes needed here for basic layout */
+}
+
+footer {
+  text-align: center;
+  font-weight: bold;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Media queries for responsividade */
+
+@media (max-width: 768px) {
+  header nav {
+    display: block;
+  }
+
+  header nav ul {
+    text-align: center;
+  }
+
+  header nav ul li {
+    display: block;
+    margin: 10px auto;
+  }
+}
